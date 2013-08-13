@@ -8,6 +8,12 @@ additional libraries or frameworks. Just plain express and mongoose!
 [![Build Status](https://travis-ci.org/saintedlama/bumm.png?branch=master)](https://travis-ci.org/saintedlama/bumm)
 [![Dependency Status](https://gemnasium.com/saintedlama/bumm.png)](https://gemnasium.com/saintedlama/bumm)
 
+# Roadmap
+
+- Switch to Bootstrap 3.0
+- Remove reptitive code in the templates
+- Make use of jade mixins
+
 # Installing Truss
 
 	npm install truss -g
