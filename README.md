@@ -1,4 +1,4 @@
-![Logo](https://raw.github.com/saintedlama/bumm/master/assets/logo.png)
+![Logo](https://raw.github.com/djensen47/truss/master/assets/logo.png)
 
 Truss is an opinionated scaffolding tool for node.js that originated from [bumm](https://github.com/saintedlama/bumm). Bumm is great but Truss has a different opinion. Particularly, DRY code and less AJAX based form submissions.
 
