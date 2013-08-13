@@ -1,6 +1,6 @@
 ![Logo](https://raw.github.com/saintedlama/bumm/master/assets/logo.png)
 
-Bumm is an opinionated project generator for node.js
+Truss is an opinionated scaffolding tool for node.js that originated from [bumm](https://github.com/saintedlama/bumm). Bumm is great but Truss has a different opinion. Particularly, DRY code and less AJAX based form submissions.
 
 Generated projects rely on [express](http://expressjs.com/) and [mongoose](http://mongoosejs.com/) without any persistence abstractions, 
 additional libraries or frameworks. Just plain express and mongoose!
@@ -8,9 +8,9 @@ additional libraries or frameworks. Just plain express and mongoose!
 [![Build Status](https://travis-ci.org/saintedlama/bumm.png?branch=master)](https://travis-ci.org/saintedlama/bumm)
 [![Dependency Status](https://gemnasium.com/saintedlama/bumm.png)](https://gemnasium.com/saintedlama/bumm)
 
-# Installing Bumm
+# Installing Truss
 
-	npm install bumm -g
+	npm install truss -g
 
 # Mini Tutorial
 
@@ -20,7 +20,7 @@ First cd to the directory where the project should be created
 
 Create a project skeleton via
 
-	bumm app testapp
+	truss app testapp
 
 Next cd to testapp
 
@@ -34,7 +34,7 @@ And install required packages through npm
 Create a model, route and views via `scaffold` command. The model
 should have two properties "title" and "description" where title is required.
 
-	bumm scaffold test title:string:required:true description
+	truss scaffold test title:string:required:true description
 
 
 Model validators are specified after property name and type in plain mongoose syntax. In case
@@ -60,7 +60,7 @@ You can create a JSON REST endpoint by scaffolding a model and its corresponding
 Project generator for node.js using express and mongoose
 
 Usage:
-  bumm [options] command [arguments]
+  truss [options] command [arguments]
 
 Options:
   --help, -h                 Output this usage dialog
@@ -89,12 +89,12 @@ attrib:
   name:type:validator:validatorValue:validator:validatorValue...
 
 Examples:
-  bumm app todo              Generates an express app skeleton
-  bumm scaffold item         Generates item model, route and views supporting
+  truss app todo              Generates an express app skeleton
+  truss scaffold item         Generates item model, route and views supporting
                              basic CRUD operations
-  bumm view item             Generates item views
+  truss view item             Generates item views
 
-  bumm scaffold item name:string:required:true
+  truss scaffold item name:string:required:true
 
                              Generates item model, route and views with a single
                              property "name" that is required.
@@ -102,7 +102,7 @@ Examples:
 
 # What bumm creates
 
-After executing `bumm app someappname` you'll find the following structure in your file system.
+After executing `truss app someappname` you'll find the following structure in your file system.
 
     |   app.js
     |   helpers.js
@@ -178,7 +178,7 @@ Bumm loads defaults first, then loads the configuration file `development` or `p
 environment variable and overrides all default values with the development or production values.
 
 ### lib
-Bumm ships with a single library file that is responsible to map values provided in request body to a mongoose
+Truss ships with a single library file that is responsible to map values provided in request body to a mongoose
 model.
 
 ### public
@@ -202,8 +202,10 @@ All generated view will be generated under views. After creating an app with Bum
 file to display some help text or defined routes, a layout.jade file that defines the layout used by all generated views and
 a mixin folder that defines mixins used in Bumm generated views.
 
+## Truss Change Log
+### 0.2.0
 
-## Change Log
+## Bumm Change Log
 ### 0.1.5 
 
 * Add option to use mongodb session store
