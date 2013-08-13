@@ -1,10 +1,10 @@
 {
-  "name": "bumm",
+  "name": "truss",
   "description": "Opinionated project generator for node.js relying on express and mongoose",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "bin": "bin/cli.js",
-  "repository": "git://github.com/the-diamond-dogs-group-oss/bumm",
-  "author": "Christoph Walcher <christoph.walcher@gmail.com>",
+  "repository": "git://github.com/djensen47/truss",
+  "author": "Dave Jensen <david@jensen47.com>",
   "license": "BSD",
   "keywords": [
     "web",
