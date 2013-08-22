@@ -1,6 +1,6 @@
 var util = require('util');
 
-var errorTag = '<span class="error help-inline">%s</span>';
+var errorTag = '<div class="help-block">%s</div>';
 
 module.exports = function(app) {
   app.locals({
@@ -18,6 +18,15 @@ module.exports = function(app) {
           return util.format(errorTag, error.type || error.message);
         }
       }
+    },
+
+    hasError: function(model, property) {
+      if (model && model.errors) {
+        if (property && model.errors[property]) {
+          return true;
+        }
+      }
+      return false;
     },
 
     display : function(value) {

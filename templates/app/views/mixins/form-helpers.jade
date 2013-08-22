@@ -1,3 +1,8 @@
+mixin formGroup(model, field)
+  - var error = hasError(model, field);
+  .form-group(class=error?'has-error':'')
+    block
+
 mixin label(field, title)
   label.control-label.col-md-2(for=field)= title
 

@@ -8,7 +8,7 @@ block content
       legend Create a new <%=model.singularCapitalized%>
     
 <% for(var i in properties) { -%>
-      .form-group
+      +formGroup(<%=model.singular%>, '<%=properties[i].name%>')
         +label("<%= properties[i].name %>", "<%= properties[i].nameCapitalized %>")
 <%    if(properties[i].type === 'String') { -%>
         .col-md-6
