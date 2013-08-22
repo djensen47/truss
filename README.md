@@ -1,18 +1,18 @@
 ![Logo](https://raw.github.com/djensen47/truss/master/assets/logo.png)
 
-Truss is an opinionated scaffolding tool for node.js that originated from [bumm](https://github.com/saintedlama/bumm). Bumm is great but Truss has a different opinion. Particularly, DRY code and less AJAX based form submissions.
+Truss is an opinionated scaffolding tool for node.js that originated from [bumm](https://github.com/saintedlama/bumm). Bumm is great but I wish to take Truss in a different direction.
 
 Generated projects rely on [express](http://expressjs.com/) and [mongoose](http://mongoosejs.com/) without any persistence abstractions, 
 additional libraries or frameworks. Just plain express and mongoose!
 
-[![Build Status](https://travis-ci.org/saintedlama/bumm.png?branch=master)](https://travis-ci.org/saintedlama/bumm)
-[![Dependency Status](https://gemnasium.com/saintedlama/bumm.png)](https://gemnasium.com/saintedlama/bumm)
-
 # Roadmap
 
 - Switch to Bootstrap 3.0
-- Remove reptitive code in the templates
-- Make use of jade mixins
+- Update JavaScript code to conform to standard style guidelines
+- Use latest Jade syntax
+- DRY up the code as needed
+- Authentication
+- Ember.js
 
 # Installing Truss
 
@@ -57,7 +57,7 @@ Now start `node app.js` and navigate your browser to `http://localhost:3000/test
 
 You can create a JSON REST endpoint by scaffolding a model and its corresponding routes. The arguments are the same as above, but instead of _scaffold_ use _scafffold:rest_ like this
 
-	bumm scaffold:rest post title:string:required:true description
+	truss scaffold:rest post title:string:required:true description
 
 
 # Usage
@@ -70,7 +70,7 @@ Usage:
 
 Options:
   --help, -h                 Output this usage dialog
-  --version, -v              Output the version of bumm
+  --version, -v              Output the version of truss
 
 Commands:
   app <name>                 Create a new application
@@ -106,7 +106,7 @@ Examples:
                              property "name" that is required.
 ```
 
-# What bumm creates
+# What truss creates
 
 After executing `truss app someappname` you'll find the following structure in your file system.
 
@@ -174,13 +174,13 @@ Initial package with value entered in the prompt dialog
 Empty readme to silence npm
 
 ### config
-The config directory is required by `app.js` to load the configuration files. Bumm assumes that you have three config files
+The config directory is required by `app.js` to load the configuration files. Truss assumes that you have three config files
 
 * __defaults__ Defines defaults that are used in development and production mode
 * __development__ Defines configuration values used in development mode only
 * __production__ Defines configuration values used in production mode only
 
-Bumm loads defaults first, then loads the configuration file `development` or `production` depending on the current `NODE_ENV`
+Truss loads defaults first, then loads the configuration file `development` or `production` depending on the current `NODE_ENV`
 environment variable and overrides all default values with the development or production values.
 
 ### lib
@@ -191,11 +191,11 @@ model.
 The public folder contains a quite up to date version of [twitter bootstrap](http://twitter.github.com/bootstrap/) under `vendor/boostrap`,
 an up to date version of [jQuery](http://jquery.com/) under `vendor/jquery` and a `custom.css` file under css.
 
-Bumm organizes all shipped 3rd party css/javascript libraries are placed in the `vendor` directory and follows a `js`, `css`, `img` schema
+Truss organizes all shipped 3rd party css/javascript libraries are placed in the `vendor` directory and follows a `js`, `css`, `img` schema
 for vendor libraries. You are free to place your libraries wherever you want :)
 
 ### routes
-All generated routes will be generated under routes. After creating an app with Bumm, you'll find a single `index.js` file in
+All generated routes will be generated under routes. After creating an app with Truss, you'll find a single `index.js` file in
 this folder. Index.js requires all files that are in or routes or a sub directory of routes to initialize the route. In case
 you require a route to be defined before another route you can always require that route in `index.js` or load routes manually
 in a defined order.
@@ -204,9 +204,9 @@ index.js also defines a route to `/` to render a nice getting started page. This
 the system!
 
 ### views
-All generated view will be generated under views. After creating an app with Bumm, you'll find an index.jade that is a welcome
+All generated view will be generated under views. After creating an app with Truss, you'll find an index.jade that is a welcome
 file to display some help text or defined routes, a layout.jade file that defines the layout used by all generated views and
-a mixin folder that defines mixins used in Bumm generated views.
+a mixin folder that defines mixins used in Truss generated views.
 
 ## Truss Change Log
 ### 0.2.0
