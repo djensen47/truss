@@ -5,6 +5,9 @@
   "bin": "bin/cli.js",
   "repository": "git://github.com/djensen47/truss",
   "author": "Dave Jensen <david@jensen47.com>",
+  "contributors": [
+    "Christoph Walcher <christoph.walcher@gmail.com>"
+  ],
   "license": "BSD",
   "keywords": [
     "web",
