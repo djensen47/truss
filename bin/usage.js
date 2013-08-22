@@ -9,7 +9,7 @@ module.exports = [
     , '  --version, -v              Output the version of truss'
     , '  --templateDir, -t <dir>    Specifies template directory. This option can be used'
     , '                             to build a custom template set. You can also set the'
-    , '                             the environment variable "BUMM_TEMPLATE_DIR" to specify.'
+    , '                             the environment variable "TRUSS_TEMPLATE_DIR" to specify.'
     , '                             an alternative template directory.'
     , ''
     , 'Commands:'

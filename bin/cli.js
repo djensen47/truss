@@ -35,7 +35,7 @@ if (argv._.length == 0) {
 var commandName = argv._.shift().toLowerCase();
 
 if (!commands[commandName]) {
-    die('Command ' + commandName + ' is not known to bumm!');
+    die('Command ' + commandName + ' is not known to truss!');
 }
 
 try {
@@ -43,8 +43,8 @@ try {
 
     options.templateDir = path.join(__dirname, '..', 'templates');
 
-    if (process.env.BUMM_TEMPLATE_DIR) {
-        options.templateDir = process.env.BUMM_TEMPLATE_DIR;
+    if (process.env.TRUSS_TEMPLATE_DIR) {
+        options.templateDir = process.env.TRUSS_TEMPLATE_DIR;
     }
 
     if (argv.templateDir || argv.t) {

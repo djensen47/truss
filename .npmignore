@@ -5,5 +5,5 @@ assets
 .idea
 .gitattributes
 
-bumm*.tgz
+truss*.tgz
 *~
