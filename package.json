@@ -1,6 +1,6 @@
 {
   "name": "truss",
-  "description": "Opinionated project generator for node.js relying on express and mongoose",
+  "description": "Opinionated project generator for node.js relying on express, jade, stylus, Bootstrap 3, and mongoose.",
   "version": "0.2.0",
   "bin": "bin/cli.js",
   "repository": "git://github.com/djensen47/truss",

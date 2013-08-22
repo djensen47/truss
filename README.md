@@ -211,6 +211,10 @@ a mixin folder that defines mixins used in Truss generated views.
 ## Truss Change Log
 ### 0.2.0
 
+* Added Bootstrap 3 support
+* Errors on forms now use Bootstrap 3 class "has-error"
+* Mixin invocation uses the now standard "+" symbol instead of "mixin"
+
 ## Bumm Change Log
 ### 0.1.5 
 
