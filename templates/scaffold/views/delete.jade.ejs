@@ -16,5 +16,5 @@ block content
   form#<%=model.singular%>-form.form-horizontal(action="<%=model.route%>/" + <%=model.singular%>._id + "/delete", method="POST")
     .form-actions
       a.btn.btn-warning(href="<%=model.route%>") Back
-      | 
+      | &nbsp;
       input.btn.btn-danger(type="submit", value="Delete")
