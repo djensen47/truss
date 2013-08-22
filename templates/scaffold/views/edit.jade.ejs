@@ -2,37 +2,45 @@ extends <%=model.relativeRootPath%>/layout
 include <%=model.relativeRootPath%>/mixins/form-helpers
 
 block content
+
   form#<%=model.singular%>-form.form-horizontal(action="<%=model.route%>/" + <%=model.singular%>._id + "/edit", method="POST")
     fieldset
       legend Edit <%=model.singularCapitalized%>
 
 <% for(var i in properties) { -%>
-      .control-group
-        mixin label("<%= properties[i].name %>", "<%= properties[i].nameCapitalized %>")        
-        .controls
+      +formGroup(<%=model.singular%>, '<%=properties[i].name%>')
+        +label("<%= properties[i].name %>", "<%= properties[i].nameCapitalized %>")
 <%    if(properties[i].type === 'String') { -%>
+        .col-md-6
 <%      if(properties[i].name === 'password') { -%>
-          mixin password("<%= properties[i].name %>", <%=model.singular%>.<%=properties[i].name%>)
+          +password("<%= properties[i].name %>", <%=model.singular%>.<%=properties[i].name%>)
 <%      } else { -%>
-          mixin text("<%= properties[i].name %>", <%=model.singular%>.<%=properties[i].name%>)
+          +text("<%= properties[i].name %>", <%=model.singular%>.<%=properties[i].name%>)
 <%      } -%>
 <%    } else if(properties[i].type === 'Textarea') { -%>
-          mixin textarea("<%= properties[i].name %>", <%=model.singular%>.<%=properties[i].name%>)
+        .col-md-6
+          +textarea("<%= properties[i].name %>", <%=model.singular%>.<%=properties[i].name%>)
 <%    } else if(properties[i].type === 'Number' || properties[i].type === 'int') { -%>
-          mixin number("<%= properties[i].name %>", <%=model.singular%>.<%=properties[i].name%>)
+        .col-md-4
+          +number("<%= properties[i].name %>", <%=model.singular%>.<%=properties[i].name%>)
 <%    } else if(properties[i].type === 'Boolean') { -%>
-          mixin boolean("<%= properties[i].name %>", <%=model.singular%>.<%=properties[i].name%>)
+        .col-md-2
+          +boolean("<%= properties[i].name %>", <%=model.singular%>.<%=properties[i].name%>)
 <%    } else if(properties[i].type === 'Date') { -%>
-          mixin date("<%= properties[i].name %>", <%=model.singular%>.<%=properties[i].name%>)
+        .col-md-4
+          +date("<%= properties[i].name %>", <%=model.singular%>.<%=properties[i].name%>)
 <%    } else if(properties[i].type === 'Datetime') { -%>
-          mixin datetime("<%= properties[i].name %>", <%=model.singular%>.<%=properties[i].name%>)
+        .col-md-4
+          +datetime("<%= properties[i].name %>", <%=model.singular%>.<%=properties[i].name%>)
 <%    } else { -%>
+        .col-md-6
           | <%= properties[i].type %>
 <%    } -%>
-          mixin errorMessage(<%=model.singular%>, '<%=properties[i].name%>')
+          +errorMessage(<%=model.singular%>, '<%=properties[i].name%>')
 <% } -%>
 
-    .form-actions
-      a.btn.btn-warning(href="<%=model.route%>") Back
-      | 
-      input.btn.btn-primary(type="submit", value="Save")
+    .form-group
+      .col-md-offset-2.col-md-10
+        a.btn.btn-warning(href="<%=model.route%>") Back
+        | &nbsp;
+        button.btn.btn-primary(type="submit") Save
