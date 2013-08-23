@@ -21,6 +21,7 @@ additional libraries or frameworks. Just plain express and mongoose!
 - Make less support an option
 
 **Future**
+- Replace i18n-2 support with Air BNB's [polyglot.js](https://github.com/airbnb/polyglot.js)
 - Authentication
 - Ember.js
 
