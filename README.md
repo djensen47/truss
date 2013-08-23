@@ -11,6 +11,7 @@ additional libraries or frameworks. Just plain express and mongoose!
 
 - ~~Rename to Truss~~
 - ~~Switch to Bootstrap 3.0~~
+- Fix the issue with using ObjectId on the command line
 - Update JavaScript code to conform to standard style guidelines
 - Use latest Jade syntax
 - DRY up the code as needed
@@ -50,7 +51,7 @@ Model validators are specified after property name and type in plain mongoose sy
 no type is specified the property will be of type string.
 
 Mongoose types 'String', 'Number', 'Date', 'Buffer', 'Boolean', 'ObjectId', 'Array' are supported. Additionally
-the types 'DateTime' and 'Textbox' are supported which result in a datetime html 5 input tag and a textbox tag.
+the types 'Datetime' and 'Textarea' are supported which result in a datetime html 5 input tag and a textbox tag.
 Types are case insensitive.
 
 
