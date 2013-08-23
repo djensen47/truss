@@ -8,13 +8,19 @@ Generated projects rely on [express](http://expressjs.com/) and [mongoose](http:
 additional libraries or frameworks. Just plain express and mongoose!
 
 # Roadmap
-
+**Done**
 - ~~Rename to Truss~~
 - ~~Switch to Bootstrap 3.0~~
+- ~~Use latest Jade syntax~~
+
+**Doing**
 - Fix the issue with using ObjectId on the command line
 - Update JavaScript code to conform to standard style guidelines
-- Use latest Jade syntax
 - DRY up the code as needed
+- Make stylus+nib support an option
+- Make less support an option
+
+**Future**
 - Authentication
 - Ember.js
 
