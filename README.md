@@ -1,13 +1,16 @@
 ![Logo](https://raw.github.com/djensen47/truss/master/assets/logo.png)
 
-Truss is an opinionated scaffolding tool for node.js that originated from [bumm](https://github.com/saintedlama/bumm). Bumm is great but I wish to take Truss in a different direction.
+Truss is an opinionated scaffolding tool for node.js that originated from [bumm](https://github.com/saintedlama/bumm). Bumm is great but I wish to take Truss in a different direction. There may have been a good reason to call the tool "bumm" but I never understood it. "Truss" on the other hand is a construction term, similar to but not the same as scaffolding.
+
+> **truss** /trəs/ *noun* a framework, typically consisting of rafters, posts, and struts, supporting a roof, bridge, or other structure
 
 Generated projects rely on [express](http://expressjs.com/) and [mongoose](http://mongoosejs.com/) without any persistence abstractions, 
 additional libraries or frameworks. Just plain express and mongoose!
 
 # Roadmap
 
-- Switch to Bootstrap 3.0
+- ~~Rename to Truss~~
+- ~~Switch to Bootstrap 3.0~~
 - Update JavaScript code to conform to standard style guidelines
 - Use latest Jade syntax
 - DRY up the code as needed
