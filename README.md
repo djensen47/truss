@@ -220,6 +220,11 @@ file to display some help text or defined routes, a layout.jade file that define
 a mixin folder that defines mixins used in Truss generated views.
 
 ## Truss Change Log
+
+### 0.2.1
+
+* Updated the edit and create templates to use the same form
+
 ### 0.2.0
 
 * Added Bootstrap 3 support
