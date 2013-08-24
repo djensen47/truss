@@ -29,3 +29,12 @@ mixin datetime(field, value)
 
 mixin errorMessage(model, field)
   !{errorFor(model, field)}
+
+// @param values Array Contains arays with two values, first is the value, second is the label
+mixin selectSingle(field, value, values)
+  select.form-control(name=field)
+    each val in values
+      if val[0] == value
+        option(value=val[0], selected=true)=val[1]
+      else
+        option(value=val[0])=val[1]
