@@ -14,7 +14,7 @@ additional libraries or frameworks. Just plain express and mongoose!
 - ~~Use latest Jade syntax~~
 
 **Doing**
-- Fix the issue with using ObjectId on the command line
+- ~~Fix the issue with using ObjectId on the command line~~
 - Update JavaScript code to conform to standard style guidelines
 - DRY up the code as needed
 - Make stylus+nib support an option
@@ -224,6 +224,7 @@ a mixin folder that defines mixins used in Truss generated views.
 ### 0.2.1
 
 * Updated the edit and create templates to use the same form
+* Fixed issue with ObjectId not working in model creation
 
 ### 0.2.0
 
