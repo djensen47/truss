@@ -14,6 +14,7 @@ additional libraries or frameworks. Just plain express and mongoose!
 - ~~Use latest Jade syntax~~
 - Fix errors with generating resources
 - You should be able to scaffold a new app into an existing directory
+- Make all confige Heroku ready
 
 **Doing**
 - ~~Fix the issue with using ObjectId on the command line~~
