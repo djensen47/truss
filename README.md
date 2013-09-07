@@ -12,6 +12,7 @@ additional libraries or frameworks. Just plain express and mongoose!
 - ~~Rename to Truss~~
 - ~~Switch to Bootstrap 3.0~~
 - ~~Use latest Jade syntax~~
+- Fix errors with generating resources
 
 **Doing**
 - ~~Fix the issue with using ObjectId on the command line~~
@@ -68,7 +69,7 @@ Now start `node app.js` and navigate your browser to `http://localhost:3000/test
 
 You can create a JSON REST endpoint by scaffolding a model and its corresponding routes. The arguments are the same as above, but instead of _scaffold_ use _scafffold:rest_ like this
 
-	truss scaffold:rest post title:string:required:true description
+	truss resource post title:string:required:true description
 
 
 # Usage
