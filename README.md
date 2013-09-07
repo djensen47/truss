@@ -13,6 +13,7 @@ additional libraries or frameworks. Just plain express and mongoose!
 - ~~Switch to Bootstrap 3.0~~
 - ~~Use latest Jade syntax~~
 - Fix errors with generating resources
+- You should be able to scaffold a new app into an existing directory
 
 **Doing**
 - ~~Fix the issue with using ObjectId on the command line~~
