@@ -12,16 +12,16 @@ additional libraries or frameworks. Just plain express and mongoose!
 - ~~Rename to Truss~~
 - ~~Switch to Bootstrap 3.0~~
 - ~~Use latest Jade syntax~~
-- Fix errors with generating resources
-- You should be able to scaffold a new app into an existing directory
-- Make all confige Heroku ready
 
 **Doing**
 - ~~Fix the issue with using ObjectId on the command line~~
-- Update JavaScript code to conform to standard style guidelines
+- ~~Update JavaScript code to conform to standard Node.js style guidelines~~
 - DRY up the code as needed
 - Make stylus+nib support an option
 - Make less support an option
+- Fix errors with generating resources
+- You should be able to scaffold a new app into an existing directory
+- Make all config Heroku ready
 
 **Future**
 - Replace i18n-2 support with Air BNB's [polyglot.js](https://github.com/airbnb/polyglot.js)
@@ -223,6 +223,11 @@ file to display some help text or defined routes, a layout.jade file that define
 a mixin folder that defines mixins used in Truss generated views.
 
 ## Truss Change Log
+
+### 0.2.2
+
+* Fixed indentation to comply with Node.js style guides
+* Added a form helper for single select boxes 
 
 ### 0.2.1
 
